@@ -1,20 +1,37 @@
-import utils
-#import variables as vr
+from  utils import (crear_tablero,colocar_barcos_manual,colocar_barcos_aleatorio,disparo,quedan_barcos)
+import time
 
+# Crear tableros
+tablero_rival = crear_tablero()
+tablero_jugador = crear_tablero()
+tablero_disparos_jugador = crear_tablero() 
 
+# Colocar barcos
+print("Colocando barcos del jugador...")
+colocar_barcos_manual(tablero_jugador)
 
-print("TABLERO DONDE SE MUESTRAN LOS BARCOS DEL RIVAL Y LOS DISPAROS DEL JUGADOR.")
-print(utils.tablero_rival_barcos)
-print(utils.colocar_barcos_manual(utils.tablero_jugador_barcos))
+print("\nColocando barcos del rival...")
+colocar_barcos_aleatorio(tablero_rival)
 
-print("TABLERO DONDE SE MUESTRAN LOS DISPAROS DEL RIVAL")
-print(utils.tablero_rival_disparos)
-print(utils.colocar_barcos_aleatorio(utils.tablero_jugador_barcos))
+# Iniciar turnos
+turno = 1
+while True:
+    print(f"Turno {turno}: {'Jugador' if turno % 2 != 0 else 'Rival'}")
 
-print("___________________________________")
+    if turno % 2 != 0:
+        disparo(tablero_rival, tablero_disparos_jugador)
+        print("\nTablero del jugador (disparos realizados):")
+        print(tablero_disparos_jugador)
+        if not quedan_barcos(tablero_rival):
+            print("¡Jugador gana!")
+            break
+    else:
+        time.sleep (2.0) # Tiempo que está pensando la máquina
+        disparo(tablero_jugador)
+        print("\nTablero del jugador (tus barcos):")
+        print(tablero_jugador)
+        if not quedan_barcos(tablero_jugador):
+            print("¡Rival gana!")
+            break
 
-
-
-
-
-
+    turno += 1
