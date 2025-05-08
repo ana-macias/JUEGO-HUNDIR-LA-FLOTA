@@ -2,16 +2,20 @@
 Desarrollo en Python del juego
 
 Estructura del Programa
+El juego se reparte en tres scripts:
+    1.- main.py ( script principal que ejecuta el juego)
+    2.- utils.py (script desde donde se cargan las funciones que hacen el juego)
+    3.- variables.py ( script donde tenemos las variables necesarias para las funciones)
 
 1.- Crear Tableros:
-Se generan cuatro tableros (matrices de 10x10):
+Se generan tres tableros (matrices de 10x10):
 Dos para el jugador: barcos y disparos.
-Dos para el rival: barcos y disparos.
+Uno para el rival: barcos. (Oculto)
 Cada casilla empieza vacía ("_").
 
 2.- Colocación de Barcos:
-Manual (Jugador): El jugador introduce la posición y orientación (horizontal o vertical) de cada barco.
-Aleatoria (Rival): El programa coloca los barcos del rival en posiciones válidas aleatorias sin superposiciones.
+Manual (Jugador): El jugador introduce la posición y orientación (horizontal o vertical) de cada barco. (No he conseguido que no se salgan)
+Aleatoria (Rival): El programa coloca los barcos del rival en posiciones aleatorias. (No he conseguido que no se salgan)
 
 3.- Disparos:
 El jugador y el rival realizan disparos alternados:
@@ -24,8 +28,8 @@ Después de cada turno, se revisa si aún quedan barcos ("O") en el tablero del 
 Si no quedan barcos, el juego termina y se anuncia al ganador.
 
 5.- Variables
-Los barcos barcos están en un diccionario con los nombres y tamaños de los barcos, por ejemplo:
-vr.barcos = {"Acorazado": 4,"Crucero": 3,"Lancha": 2}
+Los barcos barcos están en un diccionario con los nombres y tamaños de los barcos:
+barcos = {"Acorazado": 4,"Crucero": 3,"Lancha": 2}
 
 
 
