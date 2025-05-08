@@ -28,7 +28,7 @@ Después de cada turno, se revisa si aún quedan barcos ("O") en el tablero del 
 Si no quedan barcos, el juego termina y se anuncia al ganador.
 
 5.- Variables
-Los barcos barcos están en un diccionario con los nombres y tamaños de los barcos:
+Los barcos están en un diccionario con los nombres y tamaños de los barcos:
 barcos = {"Acorazado": 4,"Crucero": 3,"Lancha": 2}
 
 
