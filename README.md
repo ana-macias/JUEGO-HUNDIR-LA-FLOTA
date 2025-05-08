@@ -1,5 +1,5 @@
-# JUEGO-HUNDIR-LA-FLOTA
-Desarrollo en Python del juego
+# JUEGO-HUNDIR-LA-FLOTA 
+Desarrollo en Python del juego (CON MUCHA AYUDA DE CHATGPT)
 
 Estructura del Programa
 El juego se reparte en tres scripts:
