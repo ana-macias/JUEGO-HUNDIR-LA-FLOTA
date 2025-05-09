@@ -20,8 +20,10 @@ Se generan tres tableros (matrices de 10x10):
 
 2.- Colocación de Barcos:
 
-    Manual (Jugador): El jugador introduce la posición y orientación (horizontal o vertical) de cada barco. 
-    Aleatoria (Rival): El programa coloca los barcos del rival en posiciones aleatorias.
+    Manual (Jugador): 
+            El jugador introduce la posición y orientación (horizontal o vertical) de cada barco. 
+    Aleatoria (Rival): 
+            El programa coloca los barcos del rival en posiciones aleatorias.
 
 3.- Disparos:
 
