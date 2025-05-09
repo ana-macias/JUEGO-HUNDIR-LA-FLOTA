@@ -3,8 +3,9 @@
 Desarrollo en Python del juego (¡¡¡¡CON MUCHA AYUDA DE CHATGPT!!!!)
 
 Estructura del Programa
-El juego se reparte en tres scripts:
-    /n1.- main.py ( script principal que ejecuta el juego)
+El juego se reparte en tres scripts:  
+
+    1.- main.py ( script principal que ejecuta el juego)
     2.- utils.py (script desde donde se cargan las funciones que hacen el juego)
     3.- variables.py ( script donde tenemos las variables necesarias para las funciones)
 
